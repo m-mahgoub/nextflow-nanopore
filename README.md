@@ -18,13 +18,14 @@ nextflow-nanoproe is a Nextflow pipeline for analysis of Nanopore Whole Genome S
 
 # Running pipeline in LSF cluster (configured to WashU RIS cluster environment)
 
-Run directly from GitHub (for testing: download and save test_ris.config file to launch directory)
+To run directly from GitHub, only a config file is needed (for testing: download and save test_ris.config file to launch directory)
 ```bash
-nextflow run m-mahgoub/nextflow-nanopore -profile ris -c config/test_ris.config
+LSF_DOCKER_VOLUMES="/storage1/fs1/dspencer/Active:/storage1/fs1/dspencer/Active /scratch1/fs1/dspencer:/scratch1/fs1/dspencer $HOME:$HOME" bsub < lsf_github_launch.sh test_ris.config
 ```
-or clone the repository and run main.nf file
+
+Alternatively,  clone the repository and run main.nf it from local directory
 ```bash
-git clone https://github.com/dhslab/nextflow-nanopore.git
+git clone https://github.com/m-mahgoub/nextflow-nanopore.git
 cd nextflow-nanopore/
 LSF_DOCKER_VOLUMES="/storage1/fs1/dspencer/Active:/storage1/fs1/dspencer/Active /scratch1/fs1/dspencer:/scratch1/fs1/dspencer $HOME:$HOME" bsub < lsf_launch.sh
 ```
