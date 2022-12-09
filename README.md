@@ -27,6 +27,6 @@ Alternatively,  clone the repository and run the pipeline from local directory:
 ```bash
 git clone https://github.com/m-mahgoub/nextflow-nanopore.git
 cd nextflow-nanopore/
-LSF_DOCKER_VOLUMES="/storage1/fs1/dspencer/Active:/storage1/fs1/dspencer/Active /scratch1/fs1/dspencer:/scratch1/fs1/dspencer $HOME:$HOME" bsub < lsf_launch.sh
+LSF_DOCKER_VOLUMES="/storage1/fs1/dspencer/Active:/storage1/fs1/dspencer/Active $HOME:$HOME" bsub < lsf_launch.sh
 ```
 #### Output from test run should be generated in a directory named "results"
