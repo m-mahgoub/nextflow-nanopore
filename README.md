@@ -29,5 +29,6 @@ git clone https://github.com/m-mahgoub/nextflow-nanopore.git
 cd nextflow-nanopore/
 LSF_DOCKER_VOLUMES="/storage1/fs1/dspencer/Active:/storage1/fs1/dspencer/Active $HOME:$HOME" bsub < lsf_launch.sh
 ```
-#### Output from test run should be generated in a directory named "results"
-#### "work" is the working directory for all tasks, can be removed if the pipeline ran successfully
+- Output:
+  - "results/" is the desired output from the test run
+  - "work/" is the working directory for all tasks, can be removed if the pipeline ran successfully
