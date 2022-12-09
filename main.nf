@@ -6,8 +6,8 @@
 process guppy_basecaller {
     publishDir "${params.outdir}", mode:'copy', pattern: 'basecall/**' // "**" means include subdirecteries in glob pattern"
     container  "dhspence/docker-guppy"
-    cpus 6
-    memory '12 GB'
+    cpus 12
+    memory '48 GB'
     
     input:
         path fast5_path
