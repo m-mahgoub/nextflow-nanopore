@@ -28,13 +28,13 @@ Clone the repository and run main.nf file (should be cloned)
 ```bash
 git clone https://github.com/dhslab/nextflow-nanopore.git
 cd nextflow-nanopore/
-nextflow run main.nf -profile local  -c test_local.config
+nextflow run main.nf -profile local  -c config/test_local.config
 ```
 
 # Running pipeline in LSF cluster (configured to WashU RIS cluster environment)
 Run directly from GitHub
 ```bash
-nextflow run main.nf -profile ris -c test_ris.config
+nextflow run main.nf -profile ris -c config/test_ris.config
 ```
 or clone the repository and run main.nf file
 ```bash
