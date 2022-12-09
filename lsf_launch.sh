@@ -2,8 +2,8 @@
 #BSUB  -g /dspencer/nextflow
 #BSUB  -G compute-dspencer
 #BSUB  -q dspencer
-#BSUB  -e %J.err 
-#BSUB  -o %J.log
+#BSUB  -e nextflow_launcher.err 
+#BSUB  -o nextflow_launcher.log
 #BSUB  -We 2:00
 #BSUB  -n 2
 #BSUB  -M 12GB
